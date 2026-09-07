@@ -1,13 +1,22 @@
-# Training data and downloaded datasets stay local so yee useless hai , meri laptop mee rhega per 
-data/
-source_datasets/
-
-# Generated model files and temporary runtime output stay local
-model_cache/
-outputs/
-snapshots/
+# Python
 __pycache__/
+*.pyc
+.venv/
+venv/
 
-# PyTorch checkpoints are too large for normal GitHub repositories.
-*.pt
-*.pth
+# Env secrets
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# ML artifacts (large files — don't commit to git)
+ml/outputs/
+ml/model_cache/
+data/
+snapshots/
+
+# IDE
+.vscode/
+.idea/

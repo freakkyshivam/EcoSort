@@ -1,0 +1,27 @@
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20        # required for file/image upload endpoints
+
+# --- Config & validation ---
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Database ---
+sqlalchemy==2.0.36
+# SQLite needs no driver (built into Python) — fine for now.
+# When you switch to Neon (Postgres), add: psycopg2-binary
+
+# --- ML / inference (matches Brain.py's stack) ---
+torch==2.5.1
+torchvision==0.20.1
+pillow==11.0.0
+tqdm==4.67.1
+
+# --- Camera testing (teammate's script) ---
+opencv-python==4.10.0.84
+
+# --- Dev tools ---
+pytest==8.3.4
+httpx==0.28.1                   # for testing FastAPI endpoints
+python-dotenv==1.0.1
